@@ -1,0 +1,77 @@
+.orderList-container {
+  background-color: rebeccapurple;
+  border-radius: 2rem;
+  padding: 2rem 1rem 1rem 1rem;
+  width: 60%;
+}
+
+.dish-container {
+  background-color: orange;
+  padding: 2rem;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+}
+
+.orderList {
+  list-style: none;
+}
+
+.dishName {
+  font-family: 'Comfortaa', cursive;
+  color: rebeccapurple;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.dishBig {
+  font-family: 'Comfortaa', cursive;
+  color: black;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.dishInfo {
+  font-family: 'Comfortaa', cursive;
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.restName {
+  font-family: 'Comfortaa', cursive;
+  color: orange;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-left: 2rem;
+}
+
+.orderBtn {
+  border: none;
+  border-radius: 1rem;
+  background-color: orange;
+  color: rebeccapurple;
+  height: 3rem;
+  width: 48%;
+  font-family: 'Comfortaa', cursive;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.summaryContainer {
+  width: 38%;
+  height: fit-content;
+  background-color: rebeccapurple;
+  border-radius: 2rem;
+  padding: 2rem 1rem 1rem 1rem;
+}
+
+.summaryItems {
+  background-color: orange;
+  border-radius: 1rem;
+  padding: 2rem;
+  height: fit-content;
+  margin-bottom: 1rem;
+}

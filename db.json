@@ -7,37 +7,37 @@
       "phoneNumber": 3837728872,
       "menu": [
         {
-          "dishName": "pasta e patate",
-          "dishPrice": 4,
-          "dishInfo": "scfs",
+          "dishName": "Gyoza yaki",
+          "dishPrice": 3,
+          "dishInfo": "Grilled meat dumplings",
           "id": 1,
           "quantity": 0
         },
         {
-          "dishName": "calamri",
+          "dishName": "Tuna tataki",
           "dishPrice": 6,
-          "dishInfo": "csf",
+          "dishInfo": "Seared tuna, sesame, ponzu sauce",
           "id": 2,
           "quantity": 0
         },
         {
-          "dishName": "vongoloe",
-          "dishPrice": 45,
-          "dishInfo": "scsfsf",
+          "dishName": "Yaki udon",
+          "dishPrice": 8,
+          "dishInfo": "Seafood, vegetables, eggs",
           "id": 3,
           "quantity": 0
         },
         {
-          "dishName": "gateau",
-          "dishPrice": 34,
-          "dishInfo": "dffdfd",
+          "dishName": "Thai fried rice",
+          "dishPrice": 5,
+          "dishInfo": "Shrimp, meat, omelette, peas",
           "id": 4,
           "quantity": 0
         },
         {
-          "dishName": "maritozzo",
+          "dishName": "Ebi tempura",
           "dishPrice": 4,
-          "dishInfo": "cgsucgwscj",
+          "dishInfo": "Tempura fried shrimp",
           "id": 5,
           "quantity": 0
         }
@@ -50,23 +50,23 @@
       "phoneNumber": 4456376737,
       "menu": [
         {
-          "dishName": "pasta e patate",
-          "dishPrice": 5,
-          "dishInfo": "fhhj",
+          "dishName": "Zucchini pizza",
+          "dishPrice": 11,
+          "dishInfo": "Zucchini, cheese, garlic",
           "id": 1,
           "quantity": 0
         },
         {
-          "dishName": "gateau",
-          "dishPrice": 5,
-          "dishInfo": "jgg",
+          "dishName": "Napoli bella pizza",
+          "dishPrice": 11,
+          "dishInfo": "Tomato, basil, cheese",
           "id": 2,
           "quantity": 0
         },
         {
-          "dishName": "calamri",
-          "dishPrice": 56,
-          "dishInfo": "jgj",
+          "dishName": "Grilled calamari pizza",
+          "dishPrice": 14,
+          "dishInfo": "Calamari, tomato sauce, onion",
           "id": 3,
           "quantity": 0
         }

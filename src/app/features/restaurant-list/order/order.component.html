@@ -1,22 +1,65 @@
-<p>You ordering from: {{restaurant?.restaurantName}}</p>
-<ul>
-  <li *ngFor="let dish of restaurant?.menu">
-    <p>{{dish.dishName}}</p>
-    <p>{{dish.dishInfo}}</p>
-    <p>{{dish.dishPrice}}</p>
-    <p>{{dish?.quantity}}</p>
-    <button (click)="addDish(dish)">+</button>
-    <button (click)="removeDish(dish)">-</button>
+<main>
+  <app-header></app-header>
+
+
+
+
+  <div style="padding: 5rem">
+
+    <div class="d-flex justify-content-between">
+    <div class="orderList-container">
+<p class="restName">{{restaurant?.restaurantName}}</p>
+<ul class="m-0 p-0">
+  <li *ngFor="let dish of restaurant?.menu" class="orderList">
+    <div class="dish-container">
+      <div class="d-flex justify-content-between">
+    <p class="dishName">{{dish.dishName}}</p>
+    <p class="dishBig">$ {{dish.dishPrice}}</p>
+      </div>
+      <div class="d-flex justify-content-between">
+    <p class="dishInfo">{{dish.dishInfo}}</p>
+    <div class="d-flex gap-4">
+    <p class="dishBig">Quantity:&nbsp;&nbsp;&nbsp;&nbsp;{{dish?.quantity}}</p>
+      <i class="fa fa-plus fa-lg mt-1" (click)="addDish(dish)"></i>
+      <i class="fa fa-minus fa-lg mt-1" (click)="removeDish(dish)"></i>
+    </div>
+    </div>
+  </div>
   </li>
 </ul>
-<button (click)="postOrder()">Order</button>
+<div class="d-flex justify-content-between" style="margin-top: 3rem">
+  <button routerLink="/restaurant" class="orderBtn">Cancel</button>
+  <button (click)="postOrder()" class="orderBtn">Order</button>
+</div>
 
-<p>ordine effettuato</p>
-<p>{{restaurant.restaurantName}}</p>
-<ul>
-  <li *ngFor="let dish of order?.dishes">
-    <p>{{dish.dishName}} {{dish.quantity}} {{dish.quantity * dish.dishPrice}}</p>
+    </div>
+
+
+
+
+ <div class="summaryContainer">
+   <p class="restName">Your order</p>
+   <div class="summaryItems">
+
+<p class="dishName">{{restaurant.restaurantName}}</p>
+<ul class="m-0 p-0">
+  <li *ngFor="let dish of order?.dishes" style="list-style: none">
+    <div class="d-flex justify-content-between">
+    <p class="dishBig">{{dish.quantity}}&nbsp;x&nbsp;&nbsp;&nbsp;{{dish.dishName}}</p>
+    <p class="dishBig">$ {{dish.quantity * dish.dishPrice}}</p>
+    </div>
   </li>
 </ul>
+   </div>
+   <div class="summaryItems d-flex justify-content-between" style="height: 3.7rem; padding: 1.2rem 2rem">
+      <p class="dishBig">Tot:</p>
+      <p class="dishBig">$ {{tot}}</p>
+   </div>
 
-<p>TOT: {{tot}}</p>
+ </div>
+
+
+</div>
+</div>
+
+</main>

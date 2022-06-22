@@ -74,3 +74,55 @@
   font-size: 1.5rem;
   margin-top: .5rem;
 }
+
+.ballA {
+  position: absolute;
+  background-color: rebeccapurple;
+  overflow: hidden;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 15rem 20rem 15rem 20rem;
+  top: 25rem;
+  left: 15rem;
+}
+
+.ballB {
+  position: absolute;
+  background-color: rebeccapurple;
+  overflow: hidden;
+  width: 18rem;
+  height: 18rem;
+  border-radius: 15rem 20rem 15rem 20rem;
+  bottom: 25rem;
+  right: 8rem;
+  transform: rotate(90deg);
+}
+
+.ballB img {
+  margin-top: 7rem;
+  width: 16rem;
+  transform: rotate(-90deg);
+}
+
+.ballA img {
+  margin-left: -3.5rem;
+  width: 17rem;
+}
+
+.biggerA {
+  transition: 1s;
+}
+
+.biggerA:hover {
+  transform: scale(140%) rotate(45deg);
+  border-radius: 20%;
+}
+
+.biggerB {
+  transition: 1s;
+}
+
+.biggerB:hover {
+  transform: scale(140%) rotate(-45deg);
+  border-radius: 20%;
+}
