@@ -1,0 +1,76 @@
+
+
+.bubble {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 15rem 10rem 20rem 10rem;
+  background-color: rebeccapurple;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  top: -10rem;
+  left: 30rem;
+}
+
+.bubble img {
+  width: 15rem;
+}
+
+
+.smlbubble-restaurants{
+  width: 10.5rem;
+  height: 10rem;
+  border-radius: 15rem 20rem 15rem 15rem;
+  background-color: rebeccapurple;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  top: 5rem;
+  left: 20rem;
+}
+
+.smlbubble-restaurants a {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.smlbubble-restaurants p {
+  font-family: 'Comfortaa', cursive;
+  color: orange;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: .5rem;
+}
+
+.smlbubble-contacts{
+  width: 10.5rem;
+  height: 10rem;
+  border-radius: 15rem 15rem 20rem 15rem;
+  background-color: rebeccapurple;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  top: 15rem;
+  left: 48rem;
+}
+
+.smlbubble-contacts a {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.smlbubble-contacts p {
+  font-family: 'Comfortaa', cursive;
+  color: orange;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: .5rem;
+}

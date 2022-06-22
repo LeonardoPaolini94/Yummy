@@ -1,0 +1,23 @@
+<main>
+  <app-header></app-header>
+
+<div>
+  <ul class="d-flex gap-5 flex-lg-wrap m-0 justify-content-between" style="padding: 5rem">
+    <li *ngFor="let restaurant of restaurantList" class="myList">
+      <div class="myListItems">
+      <p class="title">{{restaurant.restaurantName}}</p>
+      <p class="details"><i class="fa fa-location-arrow"></i>&nbsp;&nbsp;&nbsp;&nbsp;{{restaurant.address}}</p>
+      <p class="details"><i class="fa fa-phone"></i>&nbsp;&nbsp;&nbsp;&nbsp;{{restaurant.phoneNumber}}</p>
+        <div class="d-flex justify-content-between pt-2">
+      <button [routerLink]="['./order/', restaurant.id]" class="myBtn">order</button>
+      <button [routerLink]="['./menu', restaurant.id]" class="myBtn">menu</button>
+      <button (click)="deleteRestaurant(restaurant.id)" class="myBtn">delete</button>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+<div class="d-flex justify-content-end" style="padding: 0 5rem">
+<button routerLink="/addrestaurant" class="myBigBtn">Add restaurant</button>
+</div>
+</main>

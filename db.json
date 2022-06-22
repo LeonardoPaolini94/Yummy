@@ -1,0 +1,91 @@
+{
+  "restaurant": [
+    {
+      "id": 1,
+      "restaurantName": "Niu-Yin",
+      "address": "Baelony street 14",
+      "phoneNumber": 3837728872,
+      "menu": [
+        {
+          "dishName": "pasta e patate",
+          "dishPrice": 4,
+          "dishInfo": "scfs",
+          "id": 1,
+          "quantity": 0
+        },
+        {
+          "dishName": "calamri",
+          "dishPrice": 6,
+          "dishInfo": "csf",
+          "id": 2,
+          "quantity": 0
+        },
+        {
+          "dishName": "vongoloe",
+          "dishPrice": 45,
+          "dishInfo": "scsfsf",
+          "id": 3,
+          "quantity": 0
+        },
+        {
+          "dishName": "gateau",
+          "dishPrice": 34,
+          "dishInfo": "dffdfd",
+          "id": 4,
+          "quantity": 0
+        },
+        {
+          "dishName": "maritozzo",
+          "dishPrice": 4,
+          "dishInfo": "cgsucgwscj",
+          "id": 5,
+          "quantity": 0
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "restaurantName": "Gennaro pizza",
+      "address": "Mastrict boulevard 245",
+      "phoneNumber": 4456376737,
+      "menu": [
+        {
+          "dishName": "pasta e patate",
+          "dishPrice": 5,
+          "dishInfo": "fhhj",
+          "id": 1,
+          "quantity": 0
+        },
+        {
+          "dishName": "gateau",
+          "dishPrice": 5,
+          "dishInfo": "jgg",
+          "id": 2,
+          "quantity": 0
+        },
+        {
+          "dishName": "calamri",
+          "dishPrice": 56,
+          "dishInfo": "jgj",
+          "id": 3,
+          "quantity": 0
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "restaurantName": "El niño de fuego",
+      "address": "Velvet road 76",
+      "phoneNumber": 8762673569,
+      "menu": []
+    },
+    {
+      "id": 4,
+      "restaurantName": "Texas grill",
+      "address": "Calacas street 14",
+      "phoneNumber": 9835678926,
+      "menu": []
+    }
+  ],
+  "order": []
+}

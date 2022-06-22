@@ -1,0 +1,22 @@
+<p>You ordering from: {{restaurant?.restaurantName}}</p>
+<ul>
+  <li *ngFor="let dish of restaurant?.menu">
+    <p>{{dish.dishName}}</p>
+    <p>{{dish.dishInfo}}</p>
+    <p>{{dish.dishPrice}}</p>
+    <p>{{dish?.quantity}}</p>
+    <button (click)="addDish(dish)">+</button>
+    <button (click)="removeDish(dish)">-</button>
+  </li>
+</ul>
+<button (click)="postOrder()">Order</button>
+
+<p>ordine effettuato</p>
+<p>{{restaurant.restaurantName}}</p>
+<ul>
+  <li *ngFor="let dish of order?.dishes">
+    <p>{{dish.dishName}} {{dish.quantity}} {{dish.quantity * dish.dishPrice}}</p>
+  </li>
+</ul>
+
+<p>TOT: {{tot}}</p>

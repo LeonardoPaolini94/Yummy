@@ -1,0 +1,44 @@
+<p>{{restaurant?.restaurantName}}</p>
+
+<ul>
+  <li *ngFor="let dish of restaurant?.menu">
+    <p>{{dish.dishName}}</p>
+    <p>{{dish.id}}</p>
+  </li>
+</ul>
+
+<button>add dish</button>
+
+<div class="sub-form">
+  <h4 class="sub-card-title sub-form-title mb-5">fill up the form</h4>
+  <form [formGroup]="addDishForm" (ngSubmit)="onSubmit()" ngNativeValidate>
+    <!-- 2 column grid layout with text inputs for the first and last names -->
+    <div class="row mb-4">
+      <div class="col">
+        <div class="form-outline">
+          <label class="form-label" for="dishName">dish name</label>
+          <input type="text" id="dishName" class="form-control" formControlName="dishName" minlength="3" maxlength="20" required pattern="[a-z A-Z]+"/>
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-outline">
+          <label class="form-label" for="dishPrice">dish price</label>
+          <input type="number" id="dishPrice" class="form-control" formControlName="dishPrice" required/>
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-outline">
+          <label class="form-label" for="dishInfo">Restaurant phone number</label>
+          <textarea id="dishInfo" class="form-control" formControlName="dishInfo" rows="4" cols="50" minlength="3" maxlength="100" required pattern="[a-z A-Z]+"></textarea>
+        </div>
+      </div>
+    </div>
+
+    <!-- Submit button -->
+    <div>
+      <button [ngClass]="addDishForm.valid ? 'sub-button-form' : 'btn-disabled'" type="submit"
+              [disabled]="addDishForm.invalid || addDishForm.disabled">ADD</button>
+    </div>
+
+  </form>
+</div>

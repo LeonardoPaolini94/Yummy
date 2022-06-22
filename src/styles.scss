@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+@import "themes/featuresStyles/home";
+@import "themes/featuresStyles/restaurantList";
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+
+
+html {
+  background-color: #fae0b6;
+}
+
+main {
+  background-color: #fae0b6;
+}
+
+.navBtn {
+  border: none;
+  background-color: #fae0b6;
+  font-family: 'Comfortaa', cursive;
+  color: rebeccapurple;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
