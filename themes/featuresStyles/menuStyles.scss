@@ -1,0 +1,49 @@
+.menu-form{
+  margin-left: 25%;
+  flex-direction: column;
+}
+
+.form-button-container{
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 3rem;
+}
+
+.myList-form {
+  background-color: orange;
+  border-radius: 2rem;
+  padding: 2rem;
+}
+
+.myList-form-div {
+  background-color: rebeccapurple;
+  border-radius: 2rem;
+  padding: 1rem;
+  margin: 6rem;
+}
+
+.info{
+  color: rebeccapurple;
+  text-transform: capitalize;
+}
+
+.details-capitalize{
+  text-transform: capitalize;
+}
+
+.myBigBtn-inverse{
+  border: none;
+  height: 4rem;
+  width: 15rem;
+  background-color: orange;
+  border-radius: .5rem;
+  font-family: 'Comfortaa', cursive;
+  color: rebeccapurple;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+.myBigBtn-inverse:hover{
+  transform: scale(105%);
+}
+

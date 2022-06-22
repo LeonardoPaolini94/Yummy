@@ -1,5 +1,8 @@
 @import "themes/featuresStyles/home";
 @import "themes/featuresStyles/restaurantList";
+@import "themes/featuresStyles/menuStyles";
+@import "themes/featuresStyles/add-restaurantStyle";
+@import "themes/featuresStyles/headerStyles";
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
 
@@ -20,4 +23,8 @@ main {
   font-weight: bold;
   font-size: 1.2rem;
   text-transform: uppercase;
+}
+
+.navBtn:hover{
+  transform: scale(110%);
 }

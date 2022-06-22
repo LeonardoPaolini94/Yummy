@@ -1,33 +1,45 @@
-<div class="sub-form">
-  <h4 class="sub-card-title sub-form-title mb-5">fill up the form</h4>
-  <form [formGroup]="addForm" (ngSubmit)="onSubmit()" ngNativeValidate>
-    <!-- 2 column grid layout with text inputs for the first and last names -->
-    <div class="row mb-4">
-      <div class="col">
-        <div class="form-outline">
-          <label class="form-label" for="restaurantName">Restaurant name</label>
-          <input type="text" id="restaurantName" class="form-control" formControlName="restaurantName" minlength="3" maxlength="20" required pattern="[a-z A-Z]+"/>
-        </div>
-      </div>
-      <div class="col">
-        <div class="form-outline">
-          <label class="form-label" for="address">Restaurant address</label>
-          <input type="text" id="address" class="form-control" formControlName="address" minlength="3" maxlength="30" required pattern="[a-z A-Z 1-9]+"/>
-        </div>
-      </div>
-      <div class="col">
-        <div class="form-outline">
-          <label class="form-label" for="phoneNumber">Restaurant phone number</label>
-          <input type="number" id="phoneNumber" class="form-control" formControlName="phoneNumber" min="1000000000" max="9999999999" required/>
-        </div>
-      </div>
-    </div>
+<main>
 
-    <!-- Submit button -->
-    <div>
-      <button [ngClass]="addForm.valid ? 'sub-button-form' : 'btn-disabled'" type="submit"
-              [disabled]="addForm.invalid || addForm.disabled">ADD</button>
-    </div>
+  <app-header></app-header>
+<div class="d-flex justify-content-evenly mt-5">
+  <div class="myList-form-addRest">
+    <div class="sub-form myList-form-rest">
+      <div class="d-flex justify-content-evenly">
+        <h4 class="sub-card-title sub-form-title mb-5 title">fill up the form</h4>
+      </div>
 
-  </form>
+      <form [formGroup]="addForm" (ngSubmit)="onSubmit()" ngNativeValidate>
+        <!-- 2 column grid layout with text inputs for the first and last names -->
+        <div class="row mb-4">
+          <div class="col">
+            <div class="form-outline">
+              <label class="form-label details" for="restaurantName">Restaurant name</label>
+              <input type="text" id="restaurantName" class="form-control" formControlName="restaurantName" minlength="3" maxlength="20" required pattern="[a-z A-Z]+"/>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-outline">
+              <label class="form-label details" for="address">Restaurant address</label>
+              <input type="text" id="address" class="form-control" formControlName="address" minlength="3" maxlength="30" required pattern="[a-z A-Z 1-9]+"/>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-outline details">
+              <label class="form-label" for="phoneNumber">Phone number</label>
+              <input type="number" id="phoneNumber" class="form-control" formControlName="phoneNumber" min="1000000000" max="9999999999" required/>
+            </div>
+          </div>
+        </div>
+
+        <!-- Submit button -->
+        <div class="d-flex justify-content-evenly">
+          <button class="myBigBtn" [ngClass]="addForm.valid ? 'sub-button-form' : 'btn-disabled'" type="submit"
+                  [disabled]="addForm.invalid || addForm.disabled">ADD</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
 </div>
+
+</main>

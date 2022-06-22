@@ -38,6 +38,10 @@
   text-transform: uppercase;
 }
 
+.myBtn:hover{
+  transform: scale(105%);
+}
+
 .myBigBtn {
   border: none;
   height: 4rem;
@@ -49,4 +53,8 @@
   font-weight: bold;
   font-size: 1.2rem;
   text-transform: uppercase;
+}
+
+.myBigBtn:hover{
+  transform: scale(105%);
 }

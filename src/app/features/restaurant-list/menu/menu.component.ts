@@ -63,7 +63,8 @@ export class MenuComponent implements OnInit, OnDestroy {
     this.restaurant.menu?.push(this.dish)
     this.addDishForm.reset()
     this.updateRestaurant()
-    console.log(this.id)
+
+    this.addDish = false
   }
 
   getLastDishId() {
@@ -77,4 +78,9 @@ export class MenuComponent implements OnInit, OnDestroy {
     this.updateRestaurantSubscription?.unsubscribe()
   }
 
+  addDish : boolean = false
+
+  openAddDishForm() {
+    this.addDish = !this.addDish
+  }
 }

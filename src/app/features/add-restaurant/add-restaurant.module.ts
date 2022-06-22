@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import {AddRestaurantComponent} from "./add-restaurant.component";
 import {RouterModule, Routes} from "@angular/router";
 import {ReactiveFormsModule} from "@angular/forms";
+import {HeaderModule} from "../../core/header/header.module";
 
 const routes : Routes = [
   {path: "", component: AddRestaurantComponent}
@@ -12,10 +13,11 @@ const routes : Routes = [
   declarations: [
     AddRestaurantComponent
   ],
-  imports: [
-    CommonModule,
-    RouterModule.forChild(routes),
-    ReactiveFormsModule
-  ]
+    imports: [
+        CommonModule,
+        RouterModule.forChild(routes),
+        ReactiveFormsModule,
+        HeaderModule
+    ]
 })
 export class AddRestaurantModule { }

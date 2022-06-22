@@ -1,44 +1,63 @@
-<p>{{restaurant?.restaurantName}}</p>
+<main>
 
-<ul>
-  <li *ngFor="let dish of restaurant?.menu">
-    <p>{{dish.dishName}}</p>
-    <p>{{dish.id}}</p>
-  </li>
-</ul>
+  <app-header></app-header>
 
-<button>add dish</button>
 
-<div class="sub-form">
-  <h4 class="sub-card-title sub-form-title mb-5">fill up the form</h4>
-  <form [formGroup]="addDishForm" (ngSubmit)="onSubmit()" ngNativeValidate>
+<div class="myList-form-div">
+
+  <div class=" myList-form m-2">
+    <div class="d-flex justify-content-evenly">
+      <p class="title">{{restaurant?.restaurantName}}</p>
+    </div>
+
+    <div class="d-flex justify-content-evenly">
+      <div *ngFor="let dish of restaurant?.menu">
+        <p class="details details-capitalize">- {{dish.dishName}}</p>
+        <p class="details details-capitalize">- {{dish.dishPrice}} €</p>
+        <p class="details">- <span class="info">info:</span>  {{dish.dishInfo}}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="d-flex justify-content-evenly mt-5">
+   <button (click)="openAddDishForm()" class="myBigBtn-inverse">add dish</button>
+  </div>
+
+</div>
+
+<div *ngIf="addDish"  class="sub-form d-flex w-50 h-25 menu-form myListItems mb-5">
+  <div class="d-flex justify-content-evenly">
+    <h4 class="sub-card-title sub-form-title mb-5 title title-form">fill up the form</h4>
+  </div>
+  <form  [formGroup]="addDishForm" (ngSubmit)="onSubmit()" ngNativeValidate>
     <!-- 2 column grid layout with text inputs for the first and last names -->
     <div class="row mb-4">
       <div class="col">
-        <div class="form-outline">
-          <label class="form-label" for="dishName">dish name</label>
+        <div class="form-outline ">
+          <label class="form-label details" for="dishName">dish name</label>
           <input type="text" id="dishName" class="form-control" formControlName="dishName" minlength="3" maxlength="20" required pattern="[a-z A-Z]+"/>
         </div>
       </div>
       <div class="col">
         <div class="form-outline">
-          <label class="form-label" for="dishPrice">dish price</label>
+          <label class="form-label details" for="dishPrice">dish price</label>
           <input type="number" id="dishPrice" class="form-control" formControlName="dishPrice" required/>
         </div>
       </div>
-      <div class="col">
-        <div class="form-outline">
-          <label class="form-label" for="dishInfo">Restaurant phone number</label>
-          <textarea id="dishInfo" class="form-control" formControlName="dishInfo" rows="4" cols="50" minlength="3" maxlength="100" required pattern="[a-z A-Z]+"></textarea>
-        </div>
+    </div>
+    <div class="col">
+      <div class="form-outline">
+        <label class="form-label details" for="dishInfo">Restaurant phone number</label>
+        <textarea id="dishInfo" class="form-control" formControlName="dishInfo" rows="4" cols="50" minlength="3" maxlength="100" required pattern="[a-z A-Z]+"></textarea>
       </div>
     </div>
-
     <!-- Submit button -->
-    <div>
-      <button [ngClass]="addDishForm.valid ? 'sub-button-form' : 'btn-disabled'" type="submit"
+    <div class="form-button-container">
+      <button class="myBigBtn" [ngClass]="addDishForm.valid ? 'sub-button-form' : 'btn-disabled'" type="submit"
               [disabled]="addDishForm.invalid || addDishForm.disabled">ADD</button>
     </div>
 
   </form>
 </div>
+
+</main>
